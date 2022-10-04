@@ -1,6 +1,6 @@
 # Welcome to Duke's RDAC Blog
 
-![DGHI LOGO]{dghi logo.jpg}
+![DGHI LOGO](dghi logo.jpg)
 
 Nested under Duke University, the Global Health Institute is further supported by the Research, Design, and Analysis Core (RDAC).
 

@@ -1,213 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- META -->
-    <meta charset="UTF-8">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="uisual" content="Made with Uisual (uisual.com)">
-    <meta name="author" content="#">
-    <meta name="description" content="#">
-    <meta name="referrer" content="unsafe-url">
-    <meta name="robots" content="index, follow">
-    <!-- SPEED -->
-    <link rel="preconnect" href="https://res.cloudinary.com">
-    <link rel="dns-prefetch" href="https://res.cloudinary.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <!-- LINK -->
-    <link rel="me" href="#">
-    <link rel="canonical" href="#">
-    <link rel="icon" type="image/png" href="#" sizes="48x48">
-    <!-- PERFORMANCE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="preload" as="style" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- TITLE -->
-    <title>Align: Free Landing Page Template from Uisual</title>
-  </head>
-  <body>
-    <header role="banner" class="ui-section-header">
-      <div class="ui-layout-container">
-        <div class="ui-section-header__layout ui-layout-flex">
-          <!-- LOGO -->
-          <a href="#" role="link" aria-label="#">
-            <svg viewBox="0 0 18 18" height="18" width="18" role="img" aria-label="#">
-              <path fill="#353535" d="M0 0h4.5v9a4.5 4.5 0 109 0V6H18v3A9 9 0 110 9V0zm18 4.5V0h-4.5v4.5H18z"/>
-            </svg>
-          </a>
-          <!-- MENU -->
-          <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-small ui-component-button-primary">Add to Chrome</a>
+    <meta name="description" content="">
+    <meta name="author" content="Priyank Agrawal">
+
+    <title>Personal Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.png" >
+</head>
+
+<body>
+    <!-- Navigation begins -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="" onclick=$("#menu-close").click();>John Doe</a>
+            </li>
+            <li>
+                <a href="#home" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#summary" onclick=$("#menu-close").click();>Summary</a>
+            </li>
+            <li>
+                <a href="#work" onclick=$("#menu-close").click();>Experience</a>
+            </li>
+            <li>
+                <a href="#projects" onclick=$("#menu-close").click();>Projects</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Home begins -->
+    <header id="home" class="header">
+        <div class="blurImg">
+            <div class="image"></div>
+            <div class="blur blurimage"></div>
         </div>
-      </div>
+
+        <div class="text-vertical-center">
+            <img class="img-responsive img-circle center-block grow" src="img/default-user.jpg" width="200px" alt="">
+            <h1>John Doe</h1>
+            <h3>Software Developer</h3>
+            <br>
+            <a target="_blank" href="http://example.com/"><span class="fa fa-linkedin-square fa-4x"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="http://example.com/"><span class="fa fa-github fa-4x" aria-hidden="true"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="http://example.com/"><span class="fa fa-facebook-official fa-4x" aria-hidden="true"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="http://example.com/"><span class="fa fa-instagram fa-4x" aria-hidden="true"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="http://example.com/"><span class="fa fa-medium fa-4x" aria-hidden="true"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="http://example.com/"><span class="fa fa-quora fa-4x" aria-hidden="true"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <br>
+            <br>
+            <a href="#summary" class="btn page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
     </header>
-    <main role="main">
-      <section class="ui-section-hero">
-        <div class="ui-layout-container">
-          <!-- COPYWRITING -->
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h1>Design better.</h1>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Add to Chrome &mdash; It&rsquo;s Free</a>
-              <p class="ui-text-note"><small>Firefox and Safari soon.</small></p>
+    <!-- Home ends -->
+
+    <!-- Summary begins -->
+    <section id="summary" class="summary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                    <i class="fa fa-user-circle fa-4x"></i>
+                    <h2>Summary</h2>
+                    <hr>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue.
+                    </p>
+
+                    <p class="lead">
+                      Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus. Nullam dapibus nibh urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut facilisis, urna a pulvinar suscipit, turpis arcu facilisis leo, nec pharetra justo augue ut orci.
+                    </p>
+
+                    <p class="lead">
+                      Praesent vel maximus dui. Nulla eleifend, lectus eget scelerisque dignissim, velit ex mattis neque, et lobortis velit quam eget est. Cras eu purus et odio placerat pellentesque.
+                    </p>
+                </div>
+                <div class="col-lg-3"></div>
             </div>
-          </div>
-          <!-- IMAGE -->
-          <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-section-hero--image">
         </div>
-      </section>
-      <section class="ui-section-customer">
-        <div class="ui-layout-container">
-          <div class="ui-section-customer__layout ui-layout-flex">
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/logos/facebook.svg" alt="#" class="ui-section-customer--logo">
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/logos/pinterest.svg" alt="#" class="ui-section-customer--logo">
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/logos/stripe.svg" alt="#" class="ui-section-customer--logo ui-section-customer--logo-str">
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/logos/dribbble.svg" alt="#" class="ui-section-customer--logo">
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/logos/behance.svg" alt="#" class="ui-section-customer--logo ui-section-customer--logo-bhn">
-          </div>
+        <!-- /.container -->
+    </section>
+    <!-- Summary ends -->
+
+    <!-- Work Image begins-->
+    <section id="workimage" class="content-section text-center">
+        <div class="text-container">
+            <p><strong>Places where I have worked.</strong></p>
         </div>
-      </section>
-      <section class="ui-section-feature">
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-left">
-            <!-- FEATURE -->
-            <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
+    </section>
+    <!-- Work Image ends -->
+
+    <!-- Work begins -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="row" id="workheading">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                <i class="fa fa-group fa-4x"></i>
+                <h2>Experience</h2>
+                <hr>
+                </div>
+                <div class="col-lg-3"></div>
             </div>
-          </div>
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- FEATURE -->
-            <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
+
+            <div class="row" id="company">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                    <a target="_blank" href="http://example.com/">
+                    <img class="img-responsive img-circle center-block grow" src="img/default-company.jpg" width="160px" alt=""></a>
+                    <h2><span>Company Name</span><br>
+                    <small>Location</small><br>
+                    <small>Designation</small><br>
+                    <small>Duration</small>
+                    </h2>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus. Nullam dapibus nibh urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut facilisis, urna a pulvinar suscipit, turpis arcu facilisis leo, nec pharetra justo augue ut orci. Praesent vel maximus dui. Nulla eleifend, lectus eget scelerisque dignissim, velit ex mattis neque, et lobortis velit quam eget est. Cras eu purus et odio placerat pellentesque.
+                    </P>
+                </div>
+                <div class="col-lg-3"></div>
             </div>
-            <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-right">
-          </div>
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-left">
-            <!-- FEATURE -->
-            <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
+
+            <br>
+            <br>
+
+            <div class="row" id="company">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                    <a target="_blank" href="http://example.com/">
+                    <img class="img-responsive img-circle center-block grow" src="img/default-company.jpg" width="160px" alt=""></a>
+                    <h2><span>Company Name</span><br>
+                    <small>Location</small><br>
+                    <small>Designation</small><br>
+                    <small>Duration</small>
+                    </h2>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus. Nullam dapibus nibh urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut facilisis, urna a pulvinar suscipit, turpis arcu facilisis leo, nec pharetra justo augue ut orci. Praesent vel maximus dui. Nulla eleifend, lectus eget scelerisque dignissim, velit ex mattis neque, et lobortis velit quam eget est. Cras eu purus et odio placerat pellentesque.
+                    </P>
+                </div>
+                <div class="col-lg-3"></div>
             </div>
-          </div>
+
         </div>
-      </section>
-      <section class="ui-section-testimonial">
-        <div class="ui-layout-container">
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Wall of Love</h2>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="ui-section-testimonial__layout ui-layout-grid ui-layout-grid-3">
-            <div class="ui-layout-column-4">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg" alt="#" class="ui-section-testimonial--avatar">
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
-            </div>
-            <div class="ui-layout-column-4">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg" alt="#" class="ui-section-testimonial--avatar">
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
-            </div>
-            <div class="ui-layout-column-4">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg" alt="#" class="ui-section-testimonial--avatar">
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
-            </div>
-            <div class="ui-layout-column-4">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg" alt="#" class="ui-section-testimonial--avatar">
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
-            </div>
-            <div class="ui-layout-column-4">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg" alt="#" class="ui-section-testimonial--avatar">
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
-            </div>
-            <div class="ui-layout-column-4">
-              <img src="https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg" alt="#" class="ui-section-testimonial--avatar">
-              <p class="ui-section-testimonial--quote ui-text-intro">&ldquo;Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna.&rdquo;</p>
-              <p class="ui-section-testimonial--author"><strong>Jane Doe</strong><br><small class="ui-text-note">CEO of Company</small></p>
-            </div>
-          </div>
+        <!-- /.container -->
+    </section>
+    <!-- Work ends -->
+
+    <!-- Projects Image begins-->
+    <section id="projectimage" class="content-section text-center">
+        <div class="text-container">
+            <p><strong>Projects that I have built.</strong></p>
         </div>
-      </section>
-      <section class="ui-section-close">
-        <div class="ui-layout-container">
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Improve your work.</h2>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Add to Chrome &mdash; It&rsquo;s Free</a>
-              <p class="ui-text-note"><small>Firefox and Safari soon.</small></p>
+    </section>
+    <!-- Projects Image ends -->
+
+    <!-- Projects begins -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="row" id="projectsheading">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center">
+                <i class="fa fa-code fa-4x"></i>
+                <h2>Projects</h2>
+                <hr>
+                </div>
+                <div class="col-lg-3"></div>
             </div>
-          </div>
-          <!-- IMAGE -->
-          <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad-t.png" loading="lazy" alt="#" class="ui-section-hero--image">
+
+            <br>
+
+            <div class="row">
+              <div class="col-lg-2 text-center">
+              </div>
+
+              <div class="col-lg-4 text-center">
+                  <a target="_blank" href="http://example.com/">
+                  <img class="img-responsive img-circle center-block grow" src="img/html.png" width="150px" alt=""></a>
+                  <h2><span>Project Name</span><br>
+                  <small>Duration</small><br>
+                  <small><a target="_blank" href="https://github.com/">GitHub</a></small>
+                  </h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus.
+                  </p>
+              </div>
+
+              <div class="col-lg-4 text-center">
+                  <a target="_blank" href="http://example.com/">
+                  <img class="img-responsive img-circle center-block grow" src="img/html.png" width="150px" alt=""></a>
+                  <h2><span>Project Name</span><br>
+                  <small>Duration</small><br>
+                  <small><a target="_blank" href="https://github.com/">GitHub</a></small>
+                  </h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus.
+                  </p>
+              </div>
+
+              <div class="col-lg-2 text-center">
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                  <a target="_blank" href="http://example.com/">
+                  <img class="img-responsive img-circle center-block grow" src="img/kaggle.png" width="150px" alt=""></a>
+                  <h2><span>Project Name</span><br>
+                  <small>Duration</small><br>
+                  <small><a target="_blank" href="https://github.com/">GitHub</a></small>
+                  </h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus.
+                  </p>
+              </div>
+
+              <div class="col-lg-4 text-center">
+                  <a target="_blank" href="http://example.com/">
+                  <img class="img-responsive img-circle center-block grow" src="img/kaggle.png" width="150px" alt=""></a>
+                  <h2><span>Project Name</span><br>
+                  <small>Duration</small><br>
+                  <small><a target="_blank" href="https://github.com/">GitHub</a></small>
+                  </h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus.
+                  </p>
+              </div>
+
+              <div class="col-lg-4 text-center">
+                  <a target="_blank" href="http://example.com/">
+                  <img class="img-responsive img-circle center-block grow" src="img/kaggle.png" width="150px" alt=""></a>
+                  <h2><span>Project Name</span><br>
+                  <small>Duration</small><br>
+                  <small><a target="_blank" href="https://github.com/">GitHub</a></small>
+                  </h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci. Integer nec augue malesuada, ullamcorper risus nec, blandit augue. Nam porta, enim sit amet tempor tempor, est lacus mollis neque, sit amet molestie ipsum risus sed purus.
+                  </p>
+              </div>
+            </div>
         </div>
-      </section>
-    </main>
-    <footer role="contentinfo" class="ui-section-footer">
-      <div class="ui-layout-container">
-        <div class="ui-section-footer__layout ui-layout-flex">
-          <!-- COPYRIGHT -->
-          <p class="ui-section-footer--copyright ui-text-note"><small>&copy; 0000 Uisual</small></p>
-          <!-- MENU -->          
-          <nav role="navigation" class="ui-section-footer--nav ui-section-footer--menu ui-layout-flex">
-            <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Features</small></a>
-            <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Help</small></a>
-            <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Terms</small></a>
-          </nav>
-          <!-- SOCIAL -->
-          <nav role="navigation" class="ui-section-footer--nav ui-section-footer--social ui-layout-flex">
-            <a href="#" role="link" aria-label="#">
-              <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-              </svg>
-            </a>
-            <a href="#" role="link" aria-label="#">
-              <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/>
-              </svg>
-            </a>
-            <a href="#" role="link" aria-label="#">
-              <svg viewBox="0 0 24 24" height="16" width="16" fill="none" stroke="#AEAEAE" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" role="img" aria-label="#">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
-              </svg>
-            </a>
-          </nav>
+        <!-- /.container -->
+    </section>
+    <!-- Projects ends -->
+
+    <!-- Footer begins -->
+    <footer>
+        <div class="container text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt eu mi a sodales. Ut turpis nunc, sagittis at leo ut, dictum fringilla orci.</p>
+            <p class="lead">You can reach out to me at john.doe@example.com</p>
+            <p>Copyright &copy; 2017 John Doe</p>
         </div>
-      </div>
     </footer>
-  </body>
+    <!-- Footer ends -->
+
+    <!-- Bact to top begins -->
+    <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <!-- Bact to top ends -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+    <!-- Blur Function -->
+    <script type="text/javascript">
+    (function () {
+        $(window).scroll(function () {
+            var oVal;
+            oVal = $(window).scrollTop() / 500;
+            return $('.blur').css('opacity', oVal);
+        });
+    }.call(this));
+    </script>
+
+    <!-- Back to top -->
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        $('#back-to-top').tooltip('show');
+    });
+    </script>
+</body>
 </html>
